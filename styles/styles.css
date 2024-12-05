@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  body{
+    font-family: "Roboto", serif;
+  }
+  #tarjeta-uno {
+    /* flex-direction:row-reverse  */
+    display: flex; /* Activa Flexbox */
+    align-items: center; /* Alinea verticalmente el contenido */
+    justify-content: space-between; /* Espacio entre los dos contenedores */
+    background-color: rgb(30, 57, 50);
+    margin-bottom: 40px;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+  }
+  
+  /* Contenedor de imagen */
+  #tarjeta-uno .contenedor-imagen {
+    width: 50%; /* Ocupa la mitad del espacio */
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+  /* Imagen */
+  #tarjeta-uno .contenedor-imagen .imagen-starbucks {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Contenedor de texto */
+  #tarjeta-uno .contenedor-texto {
+    width: 50%; /* Ocupa la mitad del espacio */
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Alinea el texto verticalmente */
+    justify-content: center; /* Centra el texto verticalmente */
+    align-items: center; /* Centra el texto horizontalmente */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #tarjeta-uno {
+      flex-direction: column; /* Cambia a diseño vertical */
+    }
+  
+    #tarjeta-uno .contenedor-imagen,
+    #tarjeta-uno .contenedor-texto {
+      width: 100%; /* Ocupan el 100% en pantallas pequeñas */
+    }
+  }
+  
+  /* .contenedor-interno{
+    display: inline-block;
+    padding: 0;
+  } */
+  
+  /* Contenedor principal */
+  #tarjeta-dos {
+    display: flex; /* Activa Flexbox */
+    align-items: center; /* Alinea verticalmente el contenido */
+    justify-content: space-between; /* Espacio entre los dos contenedores */
+    background-color: rgb(213, 0, 50);
+    margin-bottom: 40px;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+  }
+  
+  /* Contenedor de imagen */
+  #tarjeta-dos .contenedor-imagen {
+    width: 50%; /* Ocupa la mitad del espacio */
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+  /* Imagen */
+  #tarjeta-dos .contenedor-imagen .imagen-starbucks2 {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Contenedor de texto */
+  #tarjeta-dos .contenedor-texto {
+    width: 50%; /* Ocupa la mitad del espacio */
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Alinea el texto verticalmente */
+    justify-content: center; /* Centra el texto verticalmente */
+    align-items: center; /* Centra el texto horizontalmente */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #tarjeta-dos {
+      flex-direction: column; /* Cambia a diseño vertical */
+    }
+  
+    #tarjeta-dos .contenedor-imagen,
+    #tarjeta-dos .contenedor-texto {
+      width: 100%; /* Ocupan el 100% en pantallas pequeñas */
+    }
+  }
+  
+  /* Contenedor principal */
+  #tarjeta-tres {
+    display: flex; /* Activa Flexbox */
+    flex-direction: row-reverse;
+    align-items: center; /* Alinea verticalmente el contenido */
+    justify-content: space-between; /* Espacio entre los dos contenedores */
+    background-color: rgb(0, 68, 180);
+    margin-bottom: 40px;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+  }
+  
+  /* Contenedor de imagen */
+  #tarjeta-tres .contenedor-imagen {
+    width: 50%; /* Ocupa la mitad del espacio */
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+  /* Imagen */
+  #tarjeta-tres .contenedor-imagen .imagen-starbucks3 {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Contenedor de texto */
+  #tarjeta-tres .contenedor-texto {
+    width: 50%; /* Ocupa la mitad del espacio */
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Alinea el texto verticalmente */
+    justify-content: center; /* Centra el texto verticalmente */
+    align-items: center; /* Centra el texto horizontalmente */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #tarjeta-tres {
+      flex-direction: column; /* Cambia a diseño vertical */
+    }
+  
+    #tarjeta-tres .contenedor-imagen,
+    #tarjeta-tres .contenedor-texto {
+      width: 100%; /* Ocupan el 100% en pantallas pequeñas */
+    }
+  }
+  
+  #tarjeta-cuatro {
+    display: flex; /* Activa Flexbox */
+    flex-direction: row-reverse;
+    align-items: center; /* Alinea verticalmente el contenido */
+    justify-content: space-between; /* Espacio entre los dos contenedores */
+    background-color: rgb(30, 57, 50);
+    margin-bottom: 40px;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+  }
+  
+  /* Contenedor de imagen */
+  #tarjeta-cuatro .contenedor-imagen {
+    width: 50%; /* Ocupa la mitad del espacio */
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+  /* Imagen */
+  #tarjeta-cuatro .contenedor-imagen .imagen-starbucks4 {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Contenedor de texto */
+  #tarjeta-cuatro .contenedor-texto {
+    width: 50%; /* Ocupa la mitad del espacio */
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Alinea el texto verticalmente */
+    justify-content: center; /* Centra el texto verticalmente */
+    align-items: center; /* Centra el texto horizontalmente */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #tarjeta-cuatro {
+      flex-direction: column; /* Cambia a diseño vertical */
+    }
+  
+    #tarjeta-cuatro .contenedor-imagen,
+    #tarjeta-cuatro .contenedor-texto {
+      width: 100%; /* Ocupan el 100% en pantallas pequeñas */
+    }
+  
+    
+  }
+  
+  #tarjeta-cinco {
+    /* flex-direction:row-reverse  */
+    display: flex; /* Activa Flexbox */
+    align-items: center; /* Alinea verticalmente el contenido */
+    justify-content: space-between; /* Espacio entre los dos contenedores */
+    background-color: rgb(213, 0, 50);
+    margin-bottom: 40px;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+  }
+  
+  /* Contenedor de imagen */
+  #tarjeta-cinco .contenedor-imagen {
+    width: 50%; /* Ocupa la mitad del espacio */
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+  /* Imagen */
+  #tarjeta-cinco .contenedor-imagen .imagen-starbucks5 {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Contenedor de texto */
+  #tarjeta-cinco .contenedor-texto {
+    width: 50%; /* Ocupa la mitad del espacio */
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Alinea el texto verticalmente */
+    justify-content: center; /* Centra el texto verticalmente */
+    align-items: center; /* Centra el texto horizontalmente */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #tarjeta-cinco {
+      flex-direction: column; /* Cambia a diseño vertical */
+    }
+  
+    #tarjeta-cinco .contenedor-imagen,
+    #tarjeta-cinco .contenedor-texto {
+      width: 100%; /* Ocupan el 100% en pantallas pequeñas */
+    }
+  }
+  
+  /* Contenedor principal */
+  #tarjeta-seis {
+    display: flex; /* Activa Flexbox */
+    justify-content: space-between; /* Espacio entre los subcontenedores */
+    align-items: stretch; /* Hace que ambos subcontenedores ocupen el mismo alto */
+    background-color: rgb(213, 0, 50);
+    margin-bottom: 40px;
+    flex-wrap: wrap; /* Ajusta elementos en pantallas pequeñas */
+    height: auto; /* Se adapta al contenido */
+    gap: 20px; /* Espacio entre las columnas */
+  }
+  
+  /* Subcontenedores dentro del principal */
+  #tarjeta-seis .tarjeta-seis-contenedor-uno,
+  #tarjeta-seis .tarjeta-seis-contenedor-dos {
+    width: 50%; /* Ocupa la mitad del contenedor principal */
+    display: flex; /* Activa Flexbox para dividir internamente */
+    flex-direction: column; /* Apila los contenedores internamente */
+    justify-content: space-between; /* Asegura espacio entre los contenedores internos */
+    box-sizing: border-box;
+  }
+  
+  /* Contenedor de imagen */
+  #tarjeta-seis .contenedor-imagen {
+    flex: 1; /* Hace que ocupe espacio proporcional */
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+    box-sizing: border-box;
+  }
+  
+  /* Imagen */
+  #tarjeta-seis .contenedor-imagen .imagen-starbucks6 {
+    max-width: 100%; /* Escala al ancho disponible */
+    height: 100%; /* Ajusta al alto del contenedor */
+    object-fit: cover; /* Asegura que la imagen no se deforme */
+    display: block;
+  }
+  
+  /* Contenedor de texto */
+  #tarjeta-seis .contenedor-texto {
+    flex: 1; /* Hace que ocupe espacio proporcional */
+    display: flex;
+    flex-direction: column; /* Alinea el texto verticalmente */
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px; /* Espacio interno para el texto */
+  }
+  
+  /* Diseño Responsivo */
+  @media (max-width: 768px) {
+    #tarjeta-seis {
+      flex-direction: column; /* Cambia a diseño vertical */
+    }
+  
+    #tarjeta-seis .tarjeta-seis-contenedor-uno,
+    #tarjeta-seis .tarjeta-seis-contenedor-dos {
+      width: 100%; /* Cada subcontenedor ocupa el 100% */
+    }
+  
+    #tarjeta-seis .contenedor-imagen .imagen-starbucks6 {
+      object-fit: contain; /* La imagen se ajusta en pantallas pequeñas */
+      height: auto; /* Altura automática para no recortar */
+    }
+  }
+  
