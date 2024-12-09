@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  @font-face {
+    font-family: MiFuente;
+    src: url(fonts/sodo-sans-8.woff) format("woff");
+  }
+  body{
+    font-family: "MiFuente", serif;
+    font-weight: bold;
+  }
+  .header{
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .1);
+    padding: 20px;
+    height: fit-content;
+  }
+  .topnavbar{
+    display: flex;
+    justify-content: space-between;
+    max-width: 85%;
+    margin: 0 auto;
+  }
+  
+  .topnavbar .nav{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 40px;
+  }
+  .topnavbar .nav .nav-item .item-image{
+    height: 50px;
+    width: 50px;
+    max-width: 50px;
+  }
+  .topnavbar .nav .nav-item a{
+    text-decoration: none;
+    font-weight: 300;
+    color: black;
+  }
+  .topnavbar .nav .nav-item a:hover{
+    color: rgb(0, 117, 74);
+    border-bottom: 7px solid rgb(0, 117, 74);
+    padding-bottom: 30px;
+    
+  }
+
+
+.topnavbar .nav .nav-item.location a:hover {
+    color: rgb(77, 77, 77); 
+    border-bottom: none;
+    padding-bottom: none;
+
+}
+
+  .topnavbar .nav .nav-item.ingresar a {
+    
+    padding: 7px 16px;
+    border-radius: 50px;
+    border: 1px solid;
+}
+.topnavbar .nav .nav-item.ingresar a:hover {
+    color: rgb(77, 77, 77); 
+
+}
+
+.topnavbar .nav .nav-item.unete a {
+    background-color: black;
+    color: white;
+    padding: 7px 16px;
+    border-radius: 50px;
+    border: 1px solid;
+}
+
+.topnavbar .nav .nav-item.unete a:hover {
+    background-color: rgb(51, 51, 51); 
+    color: white; 
+
+
+}
+
+
+

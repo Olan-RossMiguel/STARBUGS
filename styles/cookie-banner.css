@@ -1,0 +1,39 @@
+.cookie-banner{
+    font-weight: lighter;
+    padding: 30px ;
+    border-top: 1px solid;
+    position: sticky;
+    bottom: 0;
+    width: 100vw;
+    display: flex;
+    background-color: white;
+}
+
+.banner-text-container{
+    flex-grow: 1;
+}
+
+.cookie-banner .banner-text-bold{
+    font-weight: bold;
+}
+
+.cookie-banner .banner-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cookie-banner .banner-button-container .banner-button {
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    padding: 10px 5px;
+    border-radius: 25px;
+    width: 100px;
+    cursor: pointer;
+}
+.invisible{
+    display: none;
+}
+
+

@@ -5,13 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tarjetas</title>
   <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/cookie-banner.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="shortcut icon" href="./images/logostarbacks.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./styles/starbacks.css">
+  <script src="https://kit.fontawesome.com/d8df87160d.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="./styles/navbar.css">
 </head>
 <body>
+  <header class="header">
+    <nav class="topnavbar">
+      <ul class="left-nav nav">
+        <li class="nav-item">
+          <a href="index.html">
+            <img class="item-image" src="./images/logostarbacks.svg" alt="">
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="">
+            MENU
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="">
+            REWARDS
+          </a>
+        </li>
+      </ul>
+      <ul class="right-nav nav">
+        <li class="nav-item location">
+          <a href="">
+            <i class="fa-solid fa-location-dot"></i>
+            Localizar Tienda
+          </a>
+        </li>
+        <li class="nav-item ingresar">
+          <a href="">
+            Ingresar
+          </a>
+        </li>
+        <li class="nav-item unete">
+          <a href="">
+            Únete
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
   <div id="tarjeta-uno">
     <div class="contenedor-imagen contenedor-interno">
       <img
@@ -88,37 +134,22 @@
     </div>
   </div>
 
-  <div id="tarjeta-seis">
-    <div class="tarjeta-seis-contenedor-uno">
-    <div class="contenedor-imagen contenedor-interno">
-      <img
-        class="imagen-starbucks6"
-        src="https://djftrby1k8irl.cloudfront.net/s3fs-public/2024-11%2FNoticias.png?auto=format,compress&q=70&crop=focalpoint&ar=1.8:1.0&w=740&fit=max&dpr=2" 
-        alt="chica starbucks">
-    </div>
-    <div class="contenedor-texto contenedor-interno">
-      <h3>EL CAFÉ PERFECTO
-        PARA ESTA TEMPORADA</h3>
-      <span>Una taza de café preparada con Christmas Blend es la excusa perfecta para disfrutar con tus seres queridos.</span>
-      <p>#StarbucksLatte</p>
-    </div>
-  </div>
-  <div class="tarjeta-seis-contenedor-dos">
 
-    <div class="contenedor-imagen contenedor-interno">
-      <img
-        class="imagen-starbucks6"
-        src="https://djftrby1k8irl.cloudfront.net/s3fs-public/2024-11%2FTC.png?auto=format,compress&q=70&crop=focalpoint&ar=1.8:1." 
-        alt="c0&w=740&fit=max&dpr=2hica starbucks">
+  </main>
+  <div class="cookie-banner" id="cookieBanner">
+    <div class="banner-text-container">
+      <p class="banner-text-bold">
+        Este Sitio Usa Cookies
+      </p>
+      <span>
+        Al navegar en nuestro sitio aceptas que usemos cookies para personalizar tu experiencia según la Declaración de
+        Privacidad.
+      </span>
     </div>
-    <div class="contenedor-texto contenedor-interno">
-      <h3>EL CAFÉ PERFECTO
-        PARA ESTA TEMPORADA</h3>
-      <span>Una taza de café preparada con Christmas Blend es la excusa perfecta para disfrutar con tus seres queridos.</span>
-      <p>#StarbucksLatte</p>
+    <div class="banner-button-container">
+      <button id="closeBannerButton" class="banner-button">Aceptar</button>
     </div>
   </div>
-  </div>
-  
 </body>
+<script src="./scripts/scripts.js"></script>
 </html>
