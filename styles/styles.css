@@ -8,7 +8,9 @@
   
   body{
     font-family: "Roboto", serif;
+   
   }
+  
   #tarjeta-uno {
     /* flex-direction:row-reverse  */
     display: flex; /* Activa Flexbox */
@@ -276,73 +278,106 @@
       width: 100%; /* Ocupan el 100% en pantallas pequeñas */
     }
   }
-  
-  /* Contenedor principal */
-  #tarjeta-seis {
-    display: flex; /* Activa Flexbox */
-    justify-content: space-between; /* Espacio entre los subcontenedores */
-    align-items: stretch; /* Hace que ambos subcontenedores ocupen el mismo alto */
-    background-color: rgb(213, 0, 50);
-    margin-bottom: 40px;
-    flex-wrap: wrap; /* Ajusta elementos en pantallas pequeñas */
-    height: auto; /* Se adapta al contenido */
-    gap: 20px; /* Espacio entre las columnas */
+
+  #contenedor-principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto auto; 
+    width: 100%; 
+    margin: 0 auto; 
+    column-gap: 30px;
+    margin-bottom: 60px;
   }
   
-  /* Subcontenedores dentro del principal */
-  #tarjeta-seis .tarjeta-seis-contenedor-uno,
-  #tarjeta-seis .tarjeta-seis-contenedor-dos {
-    width: 50%; /* Ocupa la mitad del contenedor principal */
-    display: flex; /* Activa Flexbox para dividir internamente */
-    flex-direction: column; /* Apila los contenedores internamente */
-    justify-content: space-between; /* Asegura espacio entre los contenedores internos */
-    box-sizing: border-box;
-  }
-  
-  /* Contenedor de imagen */
-  #tarjeta-seis .contenedor-imagen {
-    flex: 1; /* Hace que ocupe espacio proporcional */
+  .contenedor-arriba {
     display: flex;
-    justify-content: center; /* Centra la imagen horizontalmente */
-    align-items: center; /* Centra la imagen verticalmente */
-    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    /
   }
   
-  /* Imagen */
-  #tarjeta-seis .contenedor-imagen .imagen-starbucks6 {
-    max-width: 100%; /* Escala al ancho disponible */
-    height: 100%; /* Ajusta al alto del contenedor */
-    object-fit: cover; /* Asegura que la imagen no se deforme */
-    display: block;
+  .contenedor-arriba-one img {
+    width: 100%;
+    height: auto;
+    display: block; 
+    background-color: rgb(246, 191, 217);
   }
   
-  /* Contenedor de texto */
-  #tarjeta-seis .contenedor-texto {
-    flex: 1; /* Hace que ocupe espacio proporcional */
+  .contenedor-arriba-second img {
+    width: 100%;
+    height: auto;
+    display: block; 
+    background-color: rgb(152, 205, 228);
+  }
+  
+  
+  
+  .contenedor-abajo-one {
     display: flex;
-    flex-direction: column; /* Alinea el texto verticalmente */
-    justify-content: center; /* Centra el contenido verticalmente */
-    align-items: center; /* Centra el contenido horizontalmente */
-    color: white;
-    text-align: center;
-    box-sizing: border-box;
-    padding: 20px; /* Espacio interno para el texto */
+    justify-content: center;
+    align-items: center;
+    margin: 0; 
+    padding: 0; 
+    background-color: rgb(246, 191, 217); 
+    height: 240px; 
+    color:rgb(213, 0, 50);
+    flex-direction: column;
   }
   
-  /* Diseño Responsivo */
-  @media (max-width: 768px) {
-    #tarjeta-seis {
-      flex-direction: column; /* Cambia a diseño vertical */
-    }
   
-    #tarjeta-seis .tarjeta-seis-contenedor-uno,
-    #tarjeta-seis .tarjeta-seis-contenedor-dos {
-      width: 100%; /* Cada subcontenedor ocupa el 100% */
-    }
-  
-    #tarjeta-seis .contenedor-imagen .imagen-starbucks6 {
-      object-fit: contain; /* La imagen se ajusta en pantallas pequeñas */
-      height: auto; /* Altura automática para no recortar */
-    }
+  .contenedor-abajo-second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; 
+    padding: 0; 
+    background-color:  rgb(152, 205, 228); 
+    height: 240px; 
+    color:rgb(0, 59, 73);
+    
   }
   
+  #text-here {
+    
+    display: inline-block; 
+    padding: 10px 20px; 
+    text-align: center; 
+    color:  rgb(213, 0, 50); 
+    border-radius: 50px; 
+    border: 2px solid rgb(213, 0, 50); 
+    cursor: pointer; 
+    text-decoration: none; 
+    font-size: 16px; 
+   
+    font-weight: bold;
+  }
+  
+  #text-more {
+   
+    display: inline-block; 
+    padding: 10px 20px; 
+    text-align: center; 
+    color: rgb(0, 59, 73); 
+    border-radius: 50px; 
+    border: 2px solid rgb(0, 59, 73); 
+    cursor: pointer; 
+    text-decoration: none; 
+    font-size: 16px; 
+    
+    font-weight: bold;
+  }
+  .container-text-block{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  width: 100%; 
+  
+  }
+  .boton-wrapper {
+    margin-top: 30px; 
+  }
+  
+  
+    
+    
