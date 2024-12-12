@@ -4,9 +4,11 @@
     border-top: 1px solid;
     position: sticky;
     bottom: 0;
-    width: 100vw;
+    width: 100%;
     display: flex;
     background-color: white;
+    font-size: 15px;
+    position: fixed;  
 }
 
 .banner-text-container{

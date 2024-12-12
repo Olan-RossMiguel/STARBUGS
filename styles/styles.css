@@ -8,12 +8,12 @@
   
   body{
     font-family: "Roboto", serif;
+    font-size: 20px;
    
   }
   
   #tarjeta-uno {
-    /* flex-direction:row-reverse  */
-    display: flex; /* Activa Flexbox */
+    display: flex; 
     align-items: center; /* Alinea verticalmente el contenido */
     justify-content: space-between; /* Espacio entre los dos contenedores */
     background-color: rgb(30, 57, 50);
