@@ -4,165 +4,211 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Estilos generales del footer */
 footer {
-   font-weight: lighter;
-    display: flex;
-    flex-direction: column;
-    font-size: 2px;
-    background-color: white;
-    color: black;
-    padding: 20px 0;
-    font-size: 0.9rem;
-    height: fit-content;
-    padding: 20px;
-    box-shadow: 0 -3px 3px rgba(0, 0, 0, .1);
-    
+  font-weight: lighter;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  height: fit-content;
+  box-shadow: 0 -3px 3px rgba(0, 0, 0, .1);
 }
 
 /* Contenedor principal */
 .footer-container {
-   margin-top: 30px;
-   margin-bottom: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1240px;
-    gap: 70px;
-    justify-content: flex-start;
-
-    
-   
-    
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1240px;
+  gap: 70px;
+  justify-content: flex-start;
 }
 
 /* Secciones del footer */
 .footer-section {
-    
-    display: flex;
-    flex-direction: column;
-    margin-left: 50px;
-    
-    
-   
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
 }
 
 .footer-section h3 {
-    margin-bottom: 30px;
-    font-size: 1.2rem;
-    color: black;
-    
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+  color: black;
 }
 
 .footer-section p {
-    margin: 0;
-    line-height: 1.5;
+  margin: 0;
+  line-height: 1.5;
 }
 
 .footer-section ul {
-    list-style: none;
-    text-decoration: none;
-    padding: 0;
-    margin: 0;
-
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-section a:hover {
-    color:black;
-
+  color: black;
 }
+
 .footer-section ul li {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .footer-section ul li a {
-    color: rgb(119, 119, 119);
-    text-decoration: none;
-    transition: color 0.3s ease;
+  color: rgb(119, 119, 119);
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .footer-section .social-icons {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
-
 .menu-legal .block-menu li {
-    display: inline-block;
-    margin: 0 10px;
-    margin-bottom: 15px;
-  }
+  display: inline-block;
+  margin: 0 10px;
+  margin-bottom: 15px;
+}
 
-  .footer-section .menu-legal .block-menu a:hover {
-   color:rgb(119, 119, 119);
-  }
-  .menu-legal .block-menu li a {
-    position: relative; /* Necesario para posicionar el pseudo-elemento */
-  }
-  .menu-legal .block-menu li a::after {
-    content: '|'; /* Inserta la línea vertical */
-    position: absolute;
-    right: -13px; /* Ajusta esta medida según sea necesario */
-    top: 50%; /* Centra verticalmente la línea */
-    transform: translateY(-50%);
-  }  
- 
-  .menu-legal .block-menu li:last-child a::after {
-    content: ''; /* Eliminamos el contenido del pseudo-elemento */
-  }
-  .footer-section #rights {
-    font-size: 13px;
-    text-align: center;
-    color: rgb(119, 119, 119);
-  }
+.menu-legal .block-menu li a:hover {
+  color: rgb(119, 119, 119);
+}
 
-  .footer-section #code {
-    text-align: center;
-    font-size: 8px;
-    color: rgb(119, 119, 119);
-  }
+.menu-legal .block-menu li a {
+  position: relative;
+}
+
+.menu-legal .block-menu li a::after {
+  content: '|';
+  position: absolute;
+  right: -13px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.menu-legal .block-menu li:last-child a::after {
+  content: ''; /* Eliminamos el contenido del pseudo-elemento */
+}
+
+.footer-section #rights {
+  font-size: 13px;
+  text-align: center;
+  color: rgb(119, 119, 119);
+}
+
+.footer-section #code {
+  text-align: center;
+  font-size: 8px;
+  color: rgb(119, 119, 119);
+}
 
 .social-icons ul {
-    display: flex;
-    justify-content: center; /* This centers the items horizontally */
-    align-items: center; /* This centers the items vertically */
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .social-icons li {
-    margin: 0 12px; /* Adjust the margin as needed for spacing between icons */
-    margin-top:25px ;
-    
-  }
+.social-icons li {
+  margin: 0 12px;
+  margin-top: 25px;
+}
 
 .social-icons a img {
-    flex-direction: row;
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s ease;
-    
+  flex-direction: row;
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
 }
 
 .social-icons a img:hover {
-    transform: scale(1.2);
-    
+  transform: scale(1.2);
 }
-
-
 
 /* Footer inferior */
 .footer-bottom {
-    
-    border-top: 1px solid rgb(238, 238, 238);
-    display: flex;
-    justify-content: center ;
-    padding: 10px 0;
-    background-color: white;
-    font-size: 15px;
-    
-    
+  border-top: 1px solid rgb(238, 238, 238);
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  background-color: white;
+  font-size: 15px;
 }
 
 .menu-legal {
-    flex-direction: row;
+  flex-direction: row;
 }
 
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+  /* Ajustes en el contenedor principal */
+  .footer-container {
+      gap: 30px; /* Reduce el espacio entre las secciones */
+      justify-content: center; /* Centra las secciones */
+  }
 
+  /* Secciones del footer */
+  .footer-section {
+      margin-left: 0;
+      margin-bottom: 20px; /* Espacio entre las secciones */
+  }
 
+  .footer-section h3 {
+      font-size: 1rem; /* Reduce el tamaño de los títulos */
+      margin-bottom: 20px; /* Menor espacio debajo de los títulos */
+  }
 
+  .footer-section ul li {
+      margin-bottom: 15px; /* Reduce el espacio entre los elementos de la lista */
+  }
+
+  /* Ajustes en las redes sociales */
+  .social-icons ul {
+      flex-wrap: wrap; /* Permite que los iconos se ajusten en varias filas si es necesario */
+      justify-content: center; /* Centra los iconos */
+  }
+
+  .social-icons li {
+      margin: 10px; /* Menor espacio entre los iconos */
+  }
+
+  /* Footer inferior */
+  .footer-bottom {
+      font-size: 12px; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+  }
+
+  .menu-legal {
+      flex-direction: column; /* Muestra los elementos legales en una columna */
+      align-items: center; /* Centra los elementos */
+  }
+
+  .menu-legal .block-menu li {
+      margin: 5px 0; /* Menor espacio entre los elementos legales */
+  }
+
+  .menu-legal .block-menu li a::after {
+      right: -10px; /* Ajusta el espacio de la línea vertical */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Ajustes adicionales para pantallas aún más pequeñas */
+  .footer-section h3 {
+      font-size: 0.9rem; /* Reduce aún más el tamaño del título */
+      margin-bottom: 15px;
+  }
+
+  .footer-bottom {
+      font-size: 12px; /* Reduce aún más el tamaño de la fuente */
+  }
+
+  .footer-section #rights, .footer-section #code {
+      font-size: 10px; /* Ajusta el tamaño de los textos legales */
+  }
+}

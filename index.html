@@ -20,13 +20,16 @@
 </head>
 <body>
   <header class="header">
-    <nav class="topnavbar">
-      <ul class="left-nav nav">
+    <button id="abrir" class="abrir-menu"><i class="fa-solid fa-bars" style="color: #777777;"></i></i></button>
+    <nav class="topnavbar nav visible" id="nav">
+      <button class="cerrar-menu" id="cerrar"><i class="fa-solid fa-x" style="color: #777777;"></i></i></button>
+      <ul class="left-nav nav nav-list">
         <li class="nav-item">
           <a href="index.html">
             <img class="item-image" src="./images/logostarbacks.svg" alt="">
           </a>
         </li>
+        
         <li class="nav-item">
           <a href="">
             MENU
@@ -237,4 +240,5 @@
 
 </body>
 <script src="./scripts/scripts.js"></script>
+<script src="./scripts/main.js"></script>
 </html>
