@@ -289,29 +289,31 @@
     margin-bottom: 60px;
   }
   
+  .contenedor-pareja {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos de cada pareja estén en una columna */
+  }
+  
   .contenedor-arriba {
     display: flex;
     justify-content: center;
     align-items: center;
     /
   }
-  
   .contenedor-arriba-one img {
     width: 100%;
     height: auto;
     display: block; 
     background-color: rgb(246, 191, 217);
   }
-  
+
   .contenedor-arriba-second img {
     width: 100%;
     height: auto;
     display: block; 
     background-color: rgb(152, 205, 228);
   }
-  
-  
-  
+
   .contenedor-abajo-one {
     display: flex;
     justify-content: center;
@@ -323,8 +325,6 @@
     color:rgb(213, 0, 50);
     flex-direction: column;
   }
-  
-  
   .contenedor-abajo-second {
     display: flex;
     justify-content: center;
@@ -336,7 +336,8 @@
     color:rgb(0, 59, 73);
     
   }
-  
+
+
   #text-here {
     
     display: inline-block; 
@@ -377,7 +378,35 @@
   .boton-wrapper {
     margin-top: 30px; 
   }
+
+  @media (max-width: 768px) {
+    #contenedor-principal {
+      display: flex;
+      flex-direction: column; /* Coloca todo en una sola columna */
+      gap: 20px;
+    }
   
+    .contenedor-pareja {
+      display: flex;
+      flex-direction: column; /* Cada pareja apilada verticalmente */
+     
+    }
   
-    
+    .contenedor-arriba-one img,
+    .contenedor-arriba-second img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .contenedor-abajo-one,
+    .contenedor-abajo-second {
+      text-align: center; /* Centra el texto y el botón */
+    }
+  
+    #text-here,
+    #text-more {
+      margin-top: 10px;
+      font-size: 14px; /* Ajusta el tamaño del texto */
+    }
+  }
     

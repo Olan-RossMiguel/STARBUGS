@@ -20,47 +20,50 @@
 </head>
 <body>
   <header class="header">
-    <button id="abrir" class="abrir-menu"><i class="fa-solid fa-bars" style="color: #777777;"></i></i></button>
-    <nav class="topnavbar nav visible" id="nav">
-      <button class="cerrar-menu" id="cerrar"><i class="fa-solid fa-x" style="color: #777777;"></i></i></button>
-      <ul class="left-nav nav nav-list">
-        <li class="nav-item">
-          <a href="index.html">
-            <img class="item-image" src="./images/logostarbacks.svg" alt="">
-          </a>
-        </li>
-        
-        <li class="nav-item">
-          <a href="">
-            MENU
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="">
-            REWARDS
-          </a>
-        </li>
-      </ul>
-      <ul class="right-nav nav">
-        <li class="nav-item location">
-          <a href="">
-            <i class="fa-solid fa-location-dot"></i>
-            Localizar Tienda
-          </a>
-        </li>
-        <li class="nav-item ingresar">
-          <a href="">
-            Ingresar
-          </a>
-        </li>
-        <li class="nav-item unete">
-          <a href="">
-            Únete
-          </a>
-        </li>
-      </ul>
+    <nav class="topnavbar nav" id="nav">
+        <!-- Logo -->
+        <ul class="left-nav nav__links">
+            <li class="nav-item nav__item">
+                <a href="index.html" class="nav__link nav__logo">
+                    <img class="item-image" src="./images/logostarbacks.svg" alt="">
+                </a>
+                
+            </li>
+            <li class="nav-item nav__item">
+                <a href="#" class="nav__link">MENU</a>
+            </li>
+            <li class="nav-item nav__item">
+                <a href="#" class="nav__link">REWARDS</a>
+            </li>
+        </ul>
+
+        <!-- Menú hamburguesa para pantallas pequeñas -->
+        <a href="#nav" class="nav__hamburguer">
+            <i class="fa-solid fa-bars" style="color: #777777;"></i>
+        </a>
+        <a href="#" class="nav__close">
+            <i class="fa-solid fa-x" style="color: #777777;"></i>
+        </a>
+
+        <!-- Links de navegación -->
+        <ul class="right-nav nav__links">
+         
+            
+            <li class="nav-item nav__item location">
+                <a href="#" class="nav__link">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Localizar Tienda
+                </a>
+            </li>
+            <li class="nav-item nav__item ingresar">
+                <a href="#" class="nav__link">Ingresar</a>
+            </li>
+            <li class="nav-item nav__item unete">
+                <a href="#" class="nav__link">Únete</a>
+            </li>
+        </ul>
     </nav>
-  </header>
+</header>
   <main class="MainContainer">
   <div id="tarjeta-uno">
     <div class="contenedor-imagen contenedor-interno">
@@ -134,36 +137,40 @@
         alt="chica starbucks">
     </div>
     <div class="contenedor-texto contenedor-interno">
-      <h3>EL CAFÉ PERFECTO
-        PARA ESTA TEMPORADA</h3>
-      <span>Una taza de café preparada con Christmas Blend es la excusa perfecta para disfrutar con tus seres queridos.</span>
-      <p>#StarbucksLatte</p>
+      <h3>TODO Y TODOS POR EL PLANETA</h3>
+      <span>Trae tu vaso o termo favorito y obtén $8 de descuento en tu bebida</span>
+      
     </div>
   </div>
   <div id="contenedor-principal">
-    <div class="contenedor-arriba-one">
-      <img src="https://djftrby1k8irl.cloudfront.net/s3fs-public/2024-11%2FNoticias.png?auto=format,compress&q=70&crop=focalpoint&ar=1.8:1.0&w=740&fit=max&dpr=2" alt="Imagen 1">
-    </div>
-    <div class="contenedor-arriba-second">
-      <img src="https://djftrby1k8irl.cloudfront.net/s3fs-public/2024-11%2FTC.png?auto=format,compress&q=70&crop=focalpoint&ar=1.8:1.0&w=1400&fit=max&dpr=2" alt="Imagen 2">
-    </div>
-    <div class="contenedor-abajo-one">
-      <div class="container-text-block">
-        <span id="contenedor-text-three">Consulta los eventos más recientes.</span>
-      <div class="boton-wrapper">
-        <p id="text-here">Aquí</p>
+    <div class="contenedor-pareja">
+      <div class="contenedor-arriba-one">
+        <img src="https://djftrby1k8irl.cloudfront.net/s3fs-public/2024-11%2FNoticias.png?auto=format,compress&q=70&crop=focalpoint&ar=1.8:1.0&w=740&fit=max&dpr=2" alt="Imagen 1">
       </div>
+      <div class="contenedor-abajo-one">
+        <div class="container-text-block">
+          <span id="contenedor-text-three">Consulta los eventos más recientes.</span>
+          <div class="boton-wrapper">
+            <p id="text-here">Aquí</p>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="contenedor-abajo-second">
-      <div class="container-text-block">
-        <span id="contenedor-text-four">Términos y condiciones.</span>
-        <div class="boton-wrapper">
-          <p id="text-more">Ver más</p>
+    <div class="contenedor-pareja">
+      <div class="contenedor-arriba-second">
+        <img src="https://djftrby1k8irl.cloudfront.net/s3fs-public/2024-11%2FTC.png?auto=format,compress&q=70&crop=focalpoint&ar=1.8:1.0&w=1400&fit=max&dpr=2" alt="Imagen 2">
+      </div>
+      <div class="contenedor-abajo-second">
+        <div class="container-text-block">
+          <span id="contenedor-text-four">Términos y condiciones.</span>
+          <div class="boton-wrapper">
+            <p id="text-more">Ver más</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
+  
   
 
   </main>

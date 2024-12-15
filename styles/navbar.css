@@ -12,172 +12,185 @@
     font-family: "MiFuente", serif;
     font-weight: bold;
   }
-  .header{
+  .header {
     box-shadow: 0 3px 3px rgba(0, 0, 0, .1);
     padding: 20px;
     
-  }
-  .topnavbar{
+}
+
+/* Estilos generales */
+.nav {
+    --state-close: scale(0);
+    --state-hamburguer: scale(1);
+    --state-menu: translateX(-100%);
     display: flex;
     justify-content: space-between;
-    max-width: 85%;
-    margin: 0 auto;
-  }
-  
-  .topnavbar .nav{
-    display: flex;
-    list-style: none;
     align-items: center;
+    padding: 20px;
+    max-width: 100%;
+    position: relative;
+    margin: 0 auto;
     gap: 40px;
-  }
-  .topnavbar .nav .nav-item .item-image{
-    height: 50px;
-    width: 50px;
-    max-width: 50px;
-  }
-  .topnavbar .nav .nav-item a{
+}
+
+.nav:target {
+    --state-menu: translateX(0);
+    --state-close: scale(1);
+    --state-hamburguer: scale(0);
+}
+
+/* Íconos de hamburguesa y cerrar */
+.nav__hamburguer, 
+.nav__close {
+    cursor: pointer;
+    transition: 0.4s transform;
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    
+}
+
+.nav__hamburguer {
+    transform: var(--state-hamburguer);
+}
+
+.nav__close {
+    transform: var(--state-close);
+}
+
+/* Links de navegación */
+.nav__links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    color:black;
+    transform: var(--state-menu);
+    transition: 0.3s transform ease-in-out;
+    gap: 2em;
+    align-content: center;
+    text-align: center;
+    z-index: 1;
+}
+
+.nav__link {
     text-decoration: none;
     font-weight: 300;
     color: black;
-  }
-  .topnavbar .nav .nav-item a:hover{
-    color: rgb(0, 117, 74);
-    border-bottom: 7px solid rgb(0, 117, 74);
-    padding-bottom: 30px;
-    
-  }
-
-
-.topnavbar .nav .nav-item.location a:hover {
-    color: rgb(77, 77, 77); 
-    border-bottom: none;
-    padding-bottom: none;
-
+    font-size: 1.2rem;
+    letter-spacing: 1px;
 }
 
-  .topnavbar .nav .nav-item.ingresar a {
-    
+.nav__link:hover {
+    color: rgb(0, 117, 74);
+}
+
+/* Íconos específicos */
+.nav-item.location .nav__link {
+    color: black;
+}
+/* Íconos específicos */
+.nav-item .nav__link .nav__link a {
+    color: black;
+}
+
+.nav-item.ingresar .nav__link {
     padding: 7px 16px;
     border-radius: 50px;
     border: 1px solid;
 }
-.topnavbar .nav .nav-item.ingresar a:hover {
-    color: rgb(77, 77, 77); 
 
-}
-
-.topnavbar .nav .nav-item.unete a {
+.nav-item.unete .nav__link {
     background-color: black;
     color: white;
     padding: 7px 16px;
     border-radius: 50px;
     border: 1px solid;
 }
-
-.topnavbar .nav .nav-item.unete a:hover {
-    background-color: rgb(51, 51, 51); 
-    color: white; 
-
-
+/* Mostrar el menú cuando se hace clic en el ícono de hamburguesa */
+.nav:target .nav__links {
+    transform: translateX(0);  /* Menú visible */
 }
 
-/* Inicialmente ocultamos los botones de abrir y cerrar */
-.abrir-menu,
-.cerrar-menu {
-    display: none;
-}
-
-/* Media query para pantallas pequeñas */
-@media screen and (max-width: 550px) {
-
-    /* Estilos para el botón de abrir el menú */
-    .abrir-menu {
-        display: flex;
-        font-size: 1.5rem; /* Tamaño más grande para mayor accesibilidad */
-        background-color: transparent;
-        border: 0;
-        color: #1c1c1c;
-        cursor: pointer;
-        position: absolute;
-        top: 20px;
-        right: 20px;
+/* Estilos para pantallas grandes */
+@media (min-width: 768px) {
+    .header {
+        padding: 0 20px; /* Ajusta el padding para pantallas grandes */
     }
 
-    /* Estilos para el botón de cerrar el menú */
-    .cerrar-menu {
-      display: block; /* Asegúrate de que el botón sea visible */
-      font-size: 1.75rem;
-      background-color: transparent;
-      border: none;
-      color: #1c1c1c; /* Asegura un color visible */
-      position: absolute;
-      top: 1rem; /* Ajusta según tu diseño */
-      right: 1rem;
-      cursor: pointer;
-      z-index: 11; /* Asegúrate de que esté por encima del menú */
-  }
-  
-
-    /* Estilos para el menú cuando está oculto */
+    /* Si necesitas que el padding se ajuste al tamaño del logo */
+    .nav__logo {
+        width: auto;
+        height: 50px; /* O ajusta según el tamaño de tu logo */
+    }
+    
     .nav {
-        opacity: 0;
+        --state-hamburguer: scale(0);
+        --state-close: scale(0);
+        --state-menu: translate(0);
         display: flex;
-        flex-direction: column;
-        align-items: flex-end; /* Alineación de los items a la derecha */
-        gap: 1.5rem; /* Espaciado entre los items */
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #fff; /* Fondo oscuro */
-        padding: 2rem;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .7); /* Sombra de fondo */
-        transition: opacity 0.3s ease, visibility 0.3s ease;
-        z-index: 10;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.3s ease, visibility 0.3s ease;
-        
+        justify-content: space-between;
+        max-width: 85%;
+        margin: 0 auto;
     }
-    .nav-list li a {
-      color: #1c1c1c; /* Texto oscuro sobre fondo blanco */
-      font-size: 1.2rem;
-      text-decoration: none;
-  }
-    /* Mostrar el menú cuando tiene la clase 'visible' */
-    .nav.visible {
-        opacity: 1;
-        visibility: visible;
+    .nav__link.nav__logo:hover {
+        color: unset; /* Evita el cambio de color */
+        border-bottom: none; /* Elimina el subrayado */
+    }
+    
+    .nav__hamburguer, 
+    .nav__close {
+        display: none; /* Oculta los íconos de hamburguesa y cerrar */
     }
 
-    /* Estilos para los enlaces en el menú */
-    .nav-list {
-        flex-direction: column;
-        align-items: flex-end;
-        width: 100%;
+    .nav__links {
+        position: static; /* Elimina la posición fija */
+        display: flex; /* Cambia de grid a flex */
+        background-color: unset;
+        gap: 1.5em;
+        transform: none; /* Elimina cualquier transformación */
+        align-items: center;
+    }
+    .nav-item.location .nav__link {
+        border: none;
+        padding: 0;
+        color: black;
+    }
+    .nav-item.location .nav__link:hover{
+        color: rgb(77, 77, 77); 
+    }
+    
+
+    .nav__link {
+        font-size: 1rem;
+        letter-spacing: normal;
+        color: black;
     }
 
-
-
-  
-    /* Estilo para las barras del icono de hamburguesa cuando se convierte en 'X' */
-    .hamburger.active .bar:nth-child(1) {
-        transform: rotate(30deg);
-        position: relative;
-        top: 0;
+    .nav__link:hover {
+        color: rgb(0, 117, 74);
+        border-bottom: 5px solid rgb(0, 117, 74);
+        padding-bottom: 30px;
     }
 
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
+    .nav-item.location .nav__link {
+        border: none;
+        padding: 0;
     }
 
-    .hamburger.active .bar:nth-child(3) {
-        transform: rotate(-30deg);
-        position: relative;
-        top: 0;
+    .nav-item.ingresar .nav__link:hover {
+        color: rgb(77, 77, 77);
+    }
+
+    .nav-item.unete .nav__link:hover {
+        background-color: rgb(51, 51, 51);
+        color: white;
     }
 }
-
-

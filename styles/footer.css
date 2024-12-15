@@ -183,19 +183,11 @@ footer {
       font-size: 12px; /* Reduce el tamaño de la fuente en pantallas pequeñas */
   }
 
-  .menu-legal {
-      flex-direction: column; /* Muestra los elementos legales en una columna */
-      align-items: center; /* Centra los elementos */
-  }
 
-  .menu-legal .block-menu li {
-      margin: 5px 0; /* Menor espacio entre los elementos legales */
-  }
-
-  .menu-legal .block-menu li a::after {
-      right: -10px; /* Ajusta el espacio de la línea vertical */
-  }
 }
+
+
+
 
 @media (max-width: 480px) {
   /* Ajustes adicionales para pantallas aún más pequeñas */
@@ -208,7 +200,53 @@ footer {
       font-size: 12px; /* Reduce aún más el tamaño de la fuente */
   }
 
-  .footer-section #rights, .footer-section #code {
+  .footer-section #rights {
       font-size: 10px; /* Ajusta el tamaño de los textos legales */
+      text-align: left;
+  }
+  .footer-section #code{
+    font-size: 7px;
+    text-align: left;
+  }
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+  /* Ajustes para el menú legal */
+  .menu-legal {
+    flex-direction: column; /* Cambia el layout a columna */
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    margin-bottom: 20px;
+  }
+
+  .menu-legal .block-menu {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Alinea los elementos de la lista en columna */
+    gap: 14px;
+  }
+
+  .menu-legal .block-menu li {
+    margin: 5px 0; /* Espacio entre los elementos de la lista */
+  }
+
+  .menu-legal .block-menu li a {
+    color: black; /* Cambia el color del texto a negro */
+    text-decoration: none; /* Elimina el subrayado */
+    position: relative;
+  }
+
+  .menu-legal .block-menu li a::after {
+    content: ''; /* Elimina el separador "|" */
+  }
+}
+
+/* Media Queries adicionales para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  /* Ajustes adicionales en el menú legal */
+  .menu-legal .block-menu li a {
+    font-size: 14px; /* Ajusta el tamaño de la fuente */
   }
 }
